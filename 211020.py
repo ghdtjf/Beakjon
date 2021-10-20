@@ -7,7 +7,7 @@
 # 출력 예시3 : 3 * 9 = 27
 
 
-num = str(input())
+num = input()
 
 for i in num:
     if i in ('+'):
