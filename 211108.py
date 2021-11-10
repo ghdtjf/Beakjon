@@ -18,18 +18,18 @@ for link in bsOdject.find_all('li',{ "class": "bx" }):
 
 print(result_list)
 
-from openpyxl import Workbook
+# from openpyxl import Workbook
 
-wb = Workbook()
-sheet = wb.active
+# wb = Workbook()
+# sheet = wb.active
 
-row_idx = 1
+# row_idx = 1
 
-for item in result_list:
-    title_cell = sheet.cell(row=row_idx, column=1)
-    link_cell = sheet.cell(row=row_idx, column=2)
-    title_cell.value = item[0]
-    link_cell.value = item[1]
-    row_idx += 1
+# for item in result_list:
+#     title_cell = sheet.cell(row=row_idx, column=1)
+#     link_cell = sheet.cell(row=row_idx, column=2)
+#     title_cell.value = item[0]
+#     link_cell.value = item[1]
+#     row_idx += 1
 
 wb.save("복지뉴스.xlsx")
